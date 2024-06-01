@@ -1,0 +1,19 @@
+name: ci-cd-pipeline
+run-name: ${{ github.actor }}
+on:
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  PLACE-HOLDER-linting-and-formating:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Done! Code is checked"
+  PLACE-HOLDER-building-and-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Done! Code is tested in a Sandbox environment"
+  PLACE-HOLDER-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Done! Code is deployed to a Production environment"
+  
